@@ -2,7 +2,15 @@
   <div id="app">
     <HeaderComponent />
 
-    <router-view />
+    <div class="layout">
+      <div class="sidebar"></div>
+
+      <main class="content">
+        <router-view />
+      </main>
+
+      <div class="sidebar"></div>
+    </div>
 
     <FooterComponent />
   </div>

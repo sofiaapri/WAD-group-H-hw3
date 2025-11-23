@@ -1,6 +1,5 @@
 <template>
   <div class="signup-page">
-    <h1>Signup Page</h1>
       <div class="signup-box ">
           <form @submit.prevent="submitForm">
               <div class="field">

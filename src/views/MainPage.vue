@@ -1,9 +1,5 @@
 <template>
   <div class="main-page">
-    <h1>Main Page</h1>
-
-    <button @click="reset">Reset All Likes</button>
-
     <div class="posts">
       <PostComponent
         v-for="post in posts"
@@ -11,6 +7,9 @@
         :post="post"
       />
     </div>
+
+    <button @click="reset">Reset All Likes</button>
+
   </div>
 </template>
 
