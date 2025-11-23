@@ -79,6 +79,8 @@ export default {
       }
       console.log("Signup:", this.email, this.password);
 
+      this.$router.push("/")
+
       this.email = "";
       this.password = "";
     }

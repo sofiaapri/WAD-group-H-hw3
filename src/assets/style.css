@@ -376,3 +376,153 @@ nav {
   border: 1px solid #e0e0e0;
   background: #eee;
 }
+/* Page layout wrappers  */
+.main-page,
+.signup-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
+}
+
+.main-page h1,
+.signup-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Posts container on main page */
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+
+.header {
+  width: 100%;
+}
+
+.header nav {
+  height: 60px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.header a.router-link-active {
+  text-decoration: underline;
+}
+
+/* Signup page form box */
+.signup-box {
+  background-color: #e3f7be;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Signup fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.field label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.field input {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid white;
+  font: inherit;
+}
+
+/* Buttons for signup and reset likes */
+.signup-box button[type="submit"],
+.main-page > button {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Password error box */
+.error-box {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #ffe6e6;
+  border: 1px solid #ffb3b3;
+  color: #990000;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.error-box ul {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+/* Center main page content and posts */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
+}
+
+.main-page h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Center the reset button under the title */
+.main-page > button {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+/* Make posts column centered */
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  width: 100%;
+}
